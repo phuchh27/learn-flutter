@@ -10,6 +10,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    test();
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
@@ -26,6 +27,15 @@ class MyApp extends StatelessWidget {
       ),
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
+  }
+}
+
+void test() {
+  final name = 'phuc';
+  if (name == 'phuc') {
+    print('yes this is phuc');
+  } else {
+    print('no sthis í not phuc');
   }
 }
 
