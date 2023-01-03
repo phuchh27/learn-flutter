@@ -4,6 +4,35 @@ void main() {
   runApp(const MyApp());
 }
 
+void test() {
+  // var age = 20;
+  // final ageMinusOne = --age;
+  // print(age);
+  // print(ageMinusOne);
+  // final name = 'phuc';
+  // final nameTimme20 = name * 20;
+  // print(nameTimme20);
+  final names = ['huynh', 'hoang', 'phuc'];
+  print(names[1]);
+  print(names.length);
+  names.add('trang');
+  print(names.length);
+  print(names);
+  print('my mane: ' + names[1] + ' ' + names[2]);
+}
+
+void persones() {
+  var person = {
+    'age': 20,
+    'name': 'phuc',
+  };
+  print(person);
+  person['name'] = 'phiccccccccccccc';
+  print(person);
+  person['lastName'] = 'hoang';
+  print(person);
+}
+
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -11,6 +40,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     test();
+    persones();
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
@@ -27,15 +57,6 @@ class MyApp extends StatelessWidget {
       ),
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
-  }
-}
-
-void test() {
-  final name = 'phuc';
-  if (name == 'phuc') {
-    print('yes this is phuc');
-  } else {
-    print('no sthis í not phuc');
   }
 }
 
